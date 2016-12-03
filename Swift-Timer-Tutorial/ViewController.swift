@@ -36,7 +36,6 @@ class ViewController: UIViewController {
         isTimerRunning = false
     }
     
-    
     func updateTimer(){
         
         seconds += 1
@@ -50,7 +49,6 @@ class ViewController: UIViewController {
         let seconds = Int(time) % 60
         return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
