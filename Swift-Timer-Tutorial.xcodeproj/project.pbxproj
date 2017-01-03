@@ -415,6 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HUSBP9Y42K;
 				INFOPLIST_FILE = "Swift-Timer-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jennifersipila.Swift-Timer-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HUSBP9Y42K;
 				INFOPLIST_FILE = "Swift-Timer-Tutorial/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jennifersipila.Swift-Timer-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +514,7 @@
 				4B50463C1DF1E5000040892C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B50463D1DF1E5000040892C /* Build configuration list for PBXNativeTarget "Swift-Timer-TutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +523,7 @@
 				4B50463F1DF1E5000040892C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B5046401DF1E5000040892C /* Build configuration list for PBXNativeTarget "Swift-Timer-TutorialUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +532,7 @@
 				4B5046421DF1E5000040892C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
