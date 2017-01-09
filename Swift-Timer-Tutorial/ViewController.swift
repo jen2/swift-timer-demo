@@ -10,50 +10,56 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
 
-    var seconds = 0 // To make this time count down set an amount of seconds that is greater than 0 here.
+    var seconds = 60
     var timer = Timer()
     var isTimerRunning = false
-    var pauseTapped = true
+    var resumeTapped = false
     
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if isTimerRunning == false {
             runTimer()
+            self.startButton.isEnabled = false
         }
     }
     
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
-        
         isTimerRunning = true
+        pauseButton.isEnabled = true
     }
     
-    //Resume functionality for timer counting up from 0.
     @IBAction func pauseButtonTapped(_ sender: UIButton) {
-        if pauseTapped == true {
+        if self.resumeTapped == false {
             timer.invalidate()
-            pauseTapped = false
-        }
-        if pauseTapped == false {
+            self.resumeTapped = true
+            self.pauseButton.setTitle("Resume",for: .normal)
+        } else {
             runTimer()
-            pauseTapped = true
+            self.resumeTapped = false
+            self.pauseButton.setTitle("Pause",for: .normal)
         }
     }
-    
+        
     @IBAction func resetButtonTapped(_ sender: UIButton) {
         timer.invalidate()
-        seconds = 0 //To keep that initial starting value of seconds change this to the same as above.
+        seconds = 60
         timerLabel.text = timeString(time: TimeInterval(seconds))
-        
         isTimerRunning = false
+        pauseButton.isEnabled = false
     }
     
     func updateTimer(){
-        
-        seconds += 1 //Now the timer needs to count down so change "seconds += 1" to "seconds -= 1".
-        timerLabel.text = timeString(time: TimeInterval(seconds))
-        
+        if seconds < 1 {
+            timer.invalidate()
+            //Send alert to indicate time's up.
+        } else {
+            seconds -= 1
+            timerLabel.text = timeString(time: TimeInterval(seconds))
+        }
     }
     
     func timeString(time:TimeInterval) -> String {
@@ -65,7 +71,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pauseButton.isEnabled = false
     }
-
 }
 
