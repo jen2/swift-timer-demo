@@ -8,20 +8,22 @@
 
 import UIKit
 
+    //MARK: - UIViewController Properties
 class ViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
 //    @IBOutlet weak var labelButton: UIButton!
 
-    
     var seconds = 60
     var timer = Timer()
  
     var isTimerRunning = false
     var resumeTapped = false
     
+    //MARK: - IBActions
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if isTimerRunning == false {
             runTimer()
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
         startButton.isEnabled = true
     }
     
+
     func updateTimer() {
         if seconds < 1 {
             timer.invalidate()
@@ -77,6 +80,7 @@ class ViewController: UIViewController {
         return String(format:"%02i:%02i:%02i", hours, minutes, seconds)
     }
     
+    //MARK: - Super Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         pauseButton.isEnabled = false
