@@ -15,9 +15,9 @@
 		2E2606C71E5DEA760052C515 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2606C61E5DEA760052C515 /* NotificationController.swift */; };
 		2E2606C91E5DEA760052C515 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2606C81E5DEA760052C515 /* Assets.xcassets */; };
 		2E2606CD1E5DEA760052C515 /* Timer.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2E2606AF1E5DEA760052C515 /* Timer.app */; };
+		4B3F914D1EDCFB0E0021537B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3F914C1EDCFB0E0021537B /* Main.storyboard */; };
 		4B5046161DF1E4FF0040892C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5046151DF1E4FF0040892C /* AppDelegate.swift */; };
 		4B5046181DF1E4FF0040892C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5046171DF1E4FF0040892C /* ViewController.swift */; };
-		4B50461B1DF1E4FF0040892C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5046191DF1E4FF0040892C /* Main.storyboard */; };
 		4B50461D1DF1E4FF0040892C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B50461C1DF1E4FF0040892C /* Assets.xcassets */; };
 		4B5046201DF1E4FF0040892C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B50461E1DF1E4FF0040892C /* LaunchScreen.storyboard */; };
 		4B50462B1DF1E5000040892C /* Swift_Timer_TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B50462A1DF1E5000040892C /* Swift_Timer_TutorialTests.swift */; };
@@ -92,10 +92,10 @@
 		2E2606C61E5DEA760052C515 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		2E2606C81E5DEA760052C515 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E2606CA1E5DEA760052C515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3F914C1EDCFB0E0021537B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4B5046121DF1E4FF0040892C /* Swift-Timer-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Timer-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5046151DF1E4FF0040892C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5046171DF1E4FF0040892C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B50461A1DF1E4FF0040892C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B50461C1DF1E4FF0040892C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B50461F1DF1E4FF0040892C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5046211DF1E4FF0040892C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 			children = (
 				4B5046151DF1E4FF0040892C /* AppDelegate.swift */,
 				2E2606D81E5DEE9E0052C515 /* Controller */,
-				4B5046191DF1E4FF0040892C /* Main.storyboard */,
+				4B3F914C1EDCFB0E0021537B /* Main.storyboard */,
 				4B50461C1DF1E4FF0040892C /* Assets.xcassets */,
 				4B50461E1DF1E4FF0040892C /* LaunchScreen.storyboard */,
 				4B5046211DF1E4FF0040892C /* Info.plist */,
@@ -410,7 +410,7 @@
 			files = (
 				4B5046201DF1E4FF0040892C /* LaunchScreen.storyboard in Resources */,
 				4B50461D1DF1E4FF0040892C /* Assets.xcassets in Resources */,
-				4B50461B1DF1E4FF0040892C /* Main.storyboard in Resources */,
+				4B3F914D1EDCFB0E0021537B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,14 +498,6 @@
 				2E2606B21E5DEA760052C515 /* Base */,
 			);
 			name = Interface.storyboard;
-			sourceTree = "<group>";
-		};
-		4B5046191DF1E4FF0040892C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B50461A1DF1E4FF0040892C /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		4B50461E1DF1E4FF0040892C /* LaunchScreen.storyboard */ = {
@@ -782,6 +774,7 @@
 				2E2606D01E5DEA760052C515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E2606D21E5DEA760052C515 /* Build configuration list for PBXNativeTarget "Timer" */ = {
 			isa = XCConfigurationList;
@@ -790,6 +783,7 @@
 				2E2606D41E5DEA760052C515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B50460D1DF1E4FE0040892C /* Build configuration list for PBXProject "Swift-Timer-Tutorial" */ = {
 			isa = XCConfigurationList;

@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
-//    @IBOutlet weak var labelButton: UIButton!
 
     var seconds = 60
     var timer = Timer()
